@@ -1,0 +1,267 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Shelden Rattray
+% Based on: https://github.com/ProgClubGSU/Resume-Template-and-Guide and https://github.com/sb2nov/resume (MIT License)
+% License: MIT
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{amsmath}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Custom tighter list environment for resume items
+\newlist{resitemize}{itemize}{1}
+\setlist[resitemize]{leftmargin=0.15in, topsep=3pt, partopsep=0pt, itemsep=1pt, parsep=0pt}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+
+
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+% }
+\newcommand{\resumeEducationCompact}[5]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \textit{\small #2} & \textit{\small #4} \\
+    \end{tabular*}
+    \vspace{-2pt}
+    {\footnotesize
+      \begin{tabular*}{0.97\textwidth}[t]{@{\hspace{0.15in}}@{\extracolsep{\fill}}lr}
+        \textbf{Awards} #3 & \textbf{GPA: #5} \\
+        \textbf{Experience:} {STEM Tutor for undergraduate Computer Science Courses.}
+      \end{tabular*}
+    }
+    \vspace{-4pt}
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} {\normalfont\small\textit{#3}} & #2 \\
+    \end{tabular*}
+    \ifx&#4&\else
+      \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        & \textit{\small #4} \\
+      \end{tabular*}
+    \fi
+    \vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Add global vertical spacing between sections and items
+\setlength{\parskip}{3pt}          % spacing between paragraphs
+\setlength{\itemsep}{6pt}          % spacing between items in lists
+\setlength{\parsep}{3pt}           % paragraph spacing within items
+\setlength{\topsep}{6pt}           % space before/after list environments
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\linespread{1.1}
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+  \textbf{\huge \scshape Shelden Rattray} \\ \vspace{1pt}
+  \small (470) 429-4524 $|$ \href{mailto:shelden.rattray1@gmail.com}{\underline{shelden.rattray1@gmail.com}} $|$ 
+  \href{https://linkedin.com/in/shelden-rattray}{\underline{linkedin.com/in/shelden-rattray}} $|$ 
+  \href{https://github.com/sheldenr}{\underline{github.com/sheldenr}}
+  $|$ 
+  \href{https://sheldenr.dev}{\underline{sheldenr.dev}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeEducationCompact
+  {Georgia State University (Honors College)}
+  {Computer Science, B.S.}
+  {\$2500 Delta Analytics Scholarship Recipient, 5x President's List Recipient}
+  {Expected May 2027}
+  {4.00/4.00}
+
+\vspace{3pt}
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Cloud Platform Engineering Intern \textbar{} Fiserv (Fortune 500)}{May 2026 -- Present}{}{}
+    \resumeItemListStart
+      \resumeItem{Architected and modularized infrastructure-as-code (IaC) using \textbf{Terraform} to automate the provisioning of highly available multi-region architectures across \textbf{AWS} and \textbf{Azure}.}
+      \resumeItem{Orchestrated containerized workloads using \textbf{Kubernetes (K8s)} and Docker, configuring auto-scaling policies and resource limits to optimize cluster efficiency and ensure zero-downtime deployments.}
+      \resumeItem{Designed and implemented high-performance caching strategies using \textbf{Redis Cache}, drastically reducing database read latencies and enhancing application throughput under peak traffic loads.}
+      \resumeItem{Engineered robust \textbf{CI/CD pipelines} paired with custom \textbf{Bash/Python scripts} to automate system maintenance, VM patch management, and configuration compliance across hybrid cloud environments.}
+    \resumeItemListEnd
+
+\resumeSubheading
+  {Software Engineering Intern \textbar{} CuesHub}{Jul 2025 -- Aug 2025}{}{}
+  \resumeItemListStart
+    \resumeItem{Built 10+ interfaces in for CuesHub mobile application for real-time heart rate and accelerometer visualizations.}
+    \resumeItem{Implemented in-app logging utilities and structured exception handling to improve issue traceability and application stability.}
+    \resumeItem{Optimized state management and caching mechanisms for 30\% improvement in rendering performance.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {Idempotent Double-Entry Ledger \& Transaction Engine \textbar{} \emph{Go, PostgreSQL, Redis, Docker, Terraform}
+    \textnormal{\small{ -- \href{https://github.com/sheldenr/transaction-engine}{\underline{GitHub}} }}}{}
+    \resumeItemListStart
+      \resumeItem{Architected a concurrent double-entry bookkeeping engine in \textbf{Go}, using deterministic row-level pessimistic locking and \textbf{Redis} distributed mutexes to guarantee zero double-spends and eliminate deadlock risks.}
+      \resumeItem{Implemented two-tier payload-hashed idempotency caching across \textbf{Redis} and \textbf{PostgreSQL} for sub-millisecond safe request replays, automated via \textbf{Terraform} for multi-tier \textbf{AWS} deployments.}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+  {Polysia \textbar{} Full-Stack Web Application \textbar{} \emph{React, Firebase, PostgreSQL, RAG}
+    \textnormal{\small{ -- \href{https://polysia.app}{\underline{Website}} -- \href{https://github.com/sheldenr/Polysia}{\underline{GitHub}} }}}{}
+    \resumeItemListStart
+      \resumeItem{Built and deployed a full-stack web application that tracks, creates and reads stories in Mandarin Chinese to assist language learners.}
+      \resumeItem{Implemented a simple model that takes user character retention data via a simple SRS-based learning system and maps the data into a custom Adaptive Learning Model, accurately determining each user's learning rate.}
+      \resumeItem{Integrated \textbf{LLM-based} conversational feedback pipelines powered by DeepSeek and Azure Neural TTS.}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+  {Rhythm Game Performance Calculator \textbar{} Browser Extension \textbar{} \emph{JavaScript}
+    \textnormal{\small{ -- \href{https://github.com/sheldenr/osu-PP-Calculator}{\underline{GitHub}} }}}{}
+    \resumeItemListStart
+      \resumeItem{Developed a browser extension with \textbf{10,000+} installs, featuring a custom API integration layer for fetching, normalizing, and processing game data at scale.}
+      \resumeItem{Optimized asynchronous workflows and caching to reduce load times and ensure reliable data accuracy.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Languages:} {Go, Python, Java, JavaScript, TypeScript, C\#, Dart, SQL, Bash, HTML/CSS} \\
+        \textbf{Cloud \& DevOps:} {AWS, Azure (AZ-900), GCP, Kubernetes, Terraform, Docker, CI/CD, Git, GitHub} \\
+        \textbf{Frameworks \& Tools:} {React, Spring Boot, Redis, Firebase, PostgreSQL, TensorFlow, PyTorch, NumPy, Pandas} \\
+    }}
+\end{itemize}
+
+
+%-----------LEADERSHIP AND ACHIVEMENTS-----------
+\section{Leadership \& Other Experience}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {Hackathon \textbar{} 1st Place \textbar{} Truist \& Deloitte CTF Hackathon}
+    {}
+    \resumeItemListStart
+      \resumeItem{Captured 10/10 flags across real-world cybersecurity challenges on the HackTheBox's Capture The Flag platform.}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+  {Colorstack at GSU \textbar{} Technical Director}
+    {}
+    \resumeItemListStart
+      \resumeItem{Architected and deployed the core web applications and underlying infrastructure supporting our digital initiatives.}
+      \resumeItem{Engineered the official platform and technical infrastructure for PeachHacks, ensuring high availability and seamless attendee registration.}
+      \resumeItem{Manage and mentor 2 software engineering interns, conducting code reviews and guiding feature delivery across deployments.}
+    \resumeItemListEnd
+\resumeProjectHeading
+  {CS Club @ GSU \textbar{} Professional Development Director}
+    {}
+    \resumeItemListStart
+      \resumeItem{Lead career readiness initiatives, organizing technical interview prep sessions, resume reviews, and industry speaker workshops for club members.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+
+\end{document}

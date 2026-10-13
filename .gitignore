@@ -1,0 +1,37 @@
+# Binaries and build artifacts
+/bin/
+ledger-engine
+*.exe
+*.test
+*.out
+
+# Test coverage
+coverage.out
+coverage.txt
+coverage.html
+
+# Terraform local state and modules
+**/.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# IDE and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
