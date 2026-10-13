@@ -1,7 +1,5 @@
 # Idempotent Double-Entry Ledger & Transaction Engine
 
-[![CI & Security Pipeline](https://github.com/ledger/transaction-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/ledger/transaction-engine/actions/workflows/ci.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ledger/transaction-engine)](https://goreportcard.com/report/github.com/ledger/transaction-engine)
 [![Docker Image Size](https://img.shields.io/badge/docker%20image-22MB-blue)](Dockerfile)
 [![Security: Trivy Scanned](https://img.shields.io/badge/security-0%20vulnerabilities-brightgreen)](Dockerfile)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -10,7 +8,7 @@ A production-grade, highly-concurrent, immutable double-entry bookkeeping ledger
 
 ---
 
-## 🏛️ System Architecture
+## System Architecture
 
 ```mermaid
 flowchart TD
@@ -41,7 +39,7 @@ flowchart TD
 
 ---
 
-## ⚡ Core Engineering Highlights
+## Core Engineering Highlights
 
 ### 1. Immutable Double-Entry Ledger Mechanics
 - **Balanced Invariant**: Every financial movement strictly satisfies $\sum \text{Debits} = \sum \text{Credits} > 0$.
@@ -78,7 +76,7 @@ flowchart TD
 
 ---
 
-## 🚀 Quick Start (Local Development)
+## Quick Start (Local Development)
 
 ### Prerequisites
 - Go 1.24+
@@ -104,7 +102,7 @@ make test-integration
 
 ---
 
-## 📡 API Reference & Verification Examples
+## API Reference & Verification Examples
 
 ### 1. Health & Readiness
 ```bash
@@ -279,7 +277,7 @@ curl -s http://localhost:8080/api/v1/ledger/audit | jq
 
 ---
 
-## 🔒 Security & Trivy Scanning
+## Security & Trivy Scanning
 
 The production Docker container is built with a multi-stage `Dockerfile`:
 - **Builder Stage**: `golang:alpine` compiles a statically-linked minimal binary (`-trimpath -ldflags="-w -s"`).
@@ -292,5 +290,5 @@ make trivy-scan
 
 ---
 
-## 📜 License
+## License
 MIT License. Created for high-integrity financial ledger and transaction processing.
